@@ -8,8 +8,8 @@
 
 static LGFX lcd;
 
-static std::uint32_t sec, psec;
-static std::uint32_t fps = 0, frame_count = 0;
+static std::wint_t sec, psec;
+static std::wint_t fps = 0, frame_count = 0;
 static std::int32_t lcd_width ;
 static std::int32_t lcd_height;
 
@@ -19,7 +19,7 @@ struct obj_info_t {
   std::int32_t r;
   std::int32_t dx;
   std::int32_t dy;
-  std::uint32_t color;
+  std::wint_t color;
 
   void move()
   {
@@ -42,7 +42,7 @@ struct obj_info_t {
   }
 };
 
-static constexpr std::uint32_t obj_count = 200;
+static constexpr std::wint_t obj_count = 200;
 static obj_info_t objects[obj_count];
 
 static LGFX_Sprite sprites[2];
@@ -59,7 +59,7 @@ void setup(void)
   lcd_width = lcd.width();
   lcd_height = lcd.height();
   obj_info_t *a;
-  for (std::uint32_t i = 0; i < obj_count; ++i) {
+  for (std::wint_t i = 0; i < obj_count; ++i) {
     a = &objects[i];
     a->color = (uint32_t)rand() | 0x808080U;
     a->x = rand() % lcd_width;
@@ -73,14 +73,14 @@ void setup(void)
   for (;;) {
     sprite_height = (lcd_height + div - 1) / div;
     bool fail = false;
-    for (std::uint32_t i = 0; !fail && i < 2; ++i)
+    for (std::wint_t i = 0; !fail && i < 2; ++i)
     {
       sprites[i].setColorDepth(lcd.getColorDepth());
       sprites[i].setFont(&fonts::Font2);
       fail = !sprites[i].createSprite(lcd_width, sprite_height);
     }
     if (!fail) break;
-    for (std::uint32_t i = 0; i < 2; ++i)
+    for (std::wint_t i = 0; i < 2; ++i)
     {
       sprites[i].deleteSprite();
     }
@@ -94,13 +94,13 @@ void loop(void)
   static std::uint_fast8_t flip = 0;
 
   obj_info_t *a;
-  for (std::uint32_t i = 0; i != obj_count; i++) {
+  for (std::wint_t i = 0; i != obj_count; i++) {
     objects[i].move();
   }
   for (std::int32_t y = 0; y < lcd_height; y += sprite_height) {
     flip = flip ? 0 : 1;
     sprites[flip].clear();
-    for (std::uint32_t i = 0; i != obj_count; i++) {
+    for (std::wint_t i = 0; i != obj_count; i++) {
       a = &objects[i];
       if (( a->y + a->r >= y ) && ( a->y - a->r <= y + sprite_height ))
         sprites[flip].drawCircle(a->x, a->y - y, a->r, a->color);

@@ -12,6 +12,8 @@
   0x290000 ^
   SPIFFS.bin
 
+del SPIFFS.bin
+
 timeout 3
 exit
 
