@@ -3,13 +3,13 @@
 ![td_sample.jpg](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/159764/01543d65-a31b-b36e-0513-877fa368785c.jpeg)
 <BR>
 <BR>For Arduino_GFX
-<BR>Specify the pin number during initial setup.
+<BR> Specify the pin number during initial setup.
 <BR>◇AnimatedGIF_GIFDEC GIF animation of a rotating globe
 <BR>◇Clock A simple clock
 <BR>LovyanGFX
-<BR>Register the hardware configuration in the library.
-<BR>LGFX_ESP32C3-TTGO_T-Display.hpp must be stored in Arduino\libraries\LovyanGFX\src\lgfx_user beforehand.
-<BR>*Some parts have become uncompileable due to library updates.
+<BR> Register the hardware configuration in the library.
+<BR> LGFX_ESP32C3-TTGO_T-Display.hpp must be stored in Arduino\libraries\LovyanGFX\src\lgfx_user beforehand.
+<BR> *Some parts have become uncompileable due to library updates.
 <BR>◇ClockSample Analog/digital clock
 <BR>◇DrawLineThickness Some kind of pattern; they probably mean that the drawing is fast.
 <BR>◇Graph Multiple scrolling graphs
@@ -17,7 +17,7 @@
 <BR>◇MovingIcons (cannot be compiled) Icons move at high speed.
 <BR>◇RotatedZoomSample Rotates and condenses.
 <BR>TFT_eSPI
-<BR>Works with the default settings.
+<BR> Works with the default settings.
 <BR>◇boing_ball A round ball bounces.
 <BR>◇Flash_Jpg_DMA An image (panda) is displayed.
 <BR>◇SpriteRotatingCube A white cube bounces around.
@@ -45,7 +45,7 @@ T-Displayで動作するソフトウェアの例
 <BR>　◇RotatedZoomSample　　ぐるぐる回って凝縮される。
 
 <BR>TFT_eSPI
-　ディフォルト設定の決め打ちで動作する。
+<BR>　ディフォルト設定の決め打ちで動作する。
 <BR>　◇boing_ball　　丸いボールが跳ねる。
 <BR>　◇Flash_Jpg_DMA　　画像（パンダ）が表示される。
 <BR>　◇SpriteRotatingCube　　白いキューブが跳ね回る。
