@@ -176,14 +176,14 @@ void setup(void)
   for (;;) {
     sprite_height = (lcd_height + div - 1) / div;
     bool fail = false;
-    for (std::uint32_t i = 0; !fail && i < 2; ++i)
+    for (uint32_t i = 0; !fail && i < 2; ++i)
     {
       sprites[i].setColorDepth(lcd.getColorDepth());
       sprites[i].setFont(&fonts::Font2);
       fail = !sprites[i].createSprite(lcd_width, sprite_height);
     }
     if (!fail) break;
-    for (std::uint32_t i = 0; i < 2; ++i)
+    for (uint32_t i = 0; i < 2; ++i)
     {
       sprites[i].deleteSprite();
     }
