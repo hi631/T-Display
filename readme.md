@@ -13,8 +13,8 @@
 <BR>◇ClockSample Analog/digital clock
 <BR>◇DrawLineThickness Some kind of pattern; they probably mean that the drawing is fast.
 <BR>◇Graph Multiple scrolling graphs
-<BR>◇MovingCircles (cannot be compiled)  Circles move at high speed.
-<BR>◇MovingIcons (cannot be compiled) Icons move at high speed.
+<BR>◇MovingCircles  Circles move at high speed.
+<BR>◇MovingIcons  Icons move at high speed.
 <BR>◇RotatedZoomSample Rotates and condenses.
 <BR>TFT_eSPI
 <BR> Works with the default settings.
@@ -40,8 +40,8 @@ T-Displayで動作するソフトウェアの例
 <BR>　◇ClockSample　　アナログ・デジタル両様時計
 <BR>　◇DrawLineThickness　　なんだかわからない模様、描画が早いと言いたいのだろう。
 <BR>　◇Graph　　スクロールする複数本のグラフ
-<BR>　◇MovingCircles(コンパイル不可)　　輪が高速で動く。
-<BR>　◇MovingIcons(コンパイル不可)　　アイコンが高速で動く。
+<BR>　◇MovingCircles　　輪が高速で動く。
+<BR>　◇MovingIcons　　アイコンが高速で動く。
 <BR>　◇RotatedZoomSample　　ぐるぐる回って凝縮される。
 
 <BR>TFT_eSPI
